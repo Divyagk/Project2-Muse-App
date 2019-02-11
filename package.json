@@ -1,13 +1,15 @@
 {
-  "name": "protest",
+  "name": "modles",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "project.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "node": "^11.9.0"
+  }
 }
