@@ -1,2 +1,5 @@
-CREATE DATABASE projectdata_db;
-USE projectdata_db;
+DROP DATABASE IF EXISTS muse_db;
+CREATE DATABASE muse_db;
+USE muse_db;
+DROP DATABASE IF EXISTS testdb;
+CREATE DATABASE testdb;
