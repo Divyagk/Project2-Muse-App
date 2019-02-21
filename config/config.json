@@ -1,11 +1,9 @@
-
-
 {
   "development": {
     "username": "root",
     "password": "root",
     "port": 8889,
-    "database": "projectdata_db",
+    "database": "muse_db",
     "host": "localhost",
     "dialect": "mysql"
   },
