@@ -1,11 +1,10 @@
-
 {{!-- Header --}}
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">Muse App</a>
     </div>
-{{!-- adding new movies --}}
+    {{!-- adding new movies --}}
     <form class="navbar-form navbar-left" action='/api/new/movie' method=POST>
       <div class="form-group">
         <input name="name" class="form-control" placeholder="Add Movie Name">
@@ -43,7 +42,7 @@
                 </button>
 
               </div>
-              <div class="modal-body" >
+              <div class="modal-body">
                 <img class="img-responsive" id="new-movies" "height: 15%" src={{this.movie_poster}}>
                 <p><strong>Year: </strong>{{this.movie_year}}</p>
                 <p><strong>Genre: </strong>{{this.movie_genre}}</p>
@@ -61,31 +60,17 @@
           </div>
         </div>
 
-<div class="info">
-  <div class="foot">
-    {{!-- <p  class="movie-title">{{this.movie_name}}</p> --}}
-     <p><strong>Title: </strong>{{this.movie_name}}</p>
-    <i class="line"></i>
-     <p><strong>Run Time: </strong>{{this.movie_time}}</p>
-    {{!-- <p class="runtime">{{this.movie_time}}</p> --}}
-  </div>
-</div>
+        <div class="info">
+          <div class="foot">
+
+            <p><strong>Title: </strong>{{this.movie_name}}</p>
+            <i class="line"></i>
+            <p><strong>Run Time: </strong>{{this.movie_time}}</p>
+
+          </div>
+        </div>
       </div>
     </div>
   </div>
   {{/each}}
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
