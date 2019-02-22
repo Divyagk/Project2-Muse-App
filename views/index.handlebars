@@ -1,0 +1,89 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Muse App</a>
+    </div>
+
+    <form class="navbar-form navbar-left" action='/api/new/movie' method=POST>
+      <div class="form-group">
+        <input name="name" class="form-control" placeholder="Add Movie Name">
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+  </div>
+</nav>
+
+
+
+
+
+<div class="row" id="movies-container">
+  {{#each dbData}}
+
+  <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12" id="movie-box">
+    <div class="box gallery">
+      <div class="card">
+        <img class="img-responsive" id="new-movies" src={{this.movie_poster}}>
+        {{!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Click Here</button> --}}
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
+          click here
+        </button>
+
+
+        <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog"
+          aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalScrollableTitle">{{this.movie_name}}</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+
+              </div>
+              <div class="modal-body" >
+                <img class="img-responsive" id="new-movies" "height: 15%" src={{this.movie_poster}}>
+                <p><strong>Year: </strong>{{this.movie_year}}</p>
+                <p><strong>Genre: </strong>{{this.movie_genre}}</p>
+                <p><strong>Directed by: </strong>{{this.movie_director}}</p>
+                <p><strong>Plot: </strong>{{this.movie_plot}}</p>
+                <p><strong>Actors: </strong>{{this.movie_actors}}</p>
+                <p><strong>Imdb Rating: </strong>{{this.movie_ratingImdb}}</p>
+                <p><strong>Rotten Tomatoes: </strong>{{this.movie_ratingRotten}}</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                {{!-- <button type="button" class="btn btn-primary">Save changes</button> --}}
+              </div>
+            </div>
+          </div>
+        </div>
+
+<div class="info">
+  <div class="foot">
+    {{!-- <p  class="movie-title">{{this.movie_name}}</p> --}}
+     <p><strong>Title: </strong>{{this.movie_name}}</p>
+    <i class="line"></i>
+     <p><strong>Run Time: </strong>{{this.movie_time}}</p>
+    {{!-- <p class="runtime">{{this.movie_time}}</p> --}}
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
