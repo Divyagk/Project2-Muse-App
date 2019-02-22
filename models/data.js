@@ -1,3 +1,4 @@
+// For movies
 module.exports = function (sequelize, DataTypes) {
     var Data= sequelize.define("Data", {
   

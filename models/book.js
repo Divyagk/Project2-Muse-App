@@ -1,3 +1,4 @@
+// For books
 module.exports = function (sequelize, DataTypes) {
     var Books = sequelize.define("Books", {
   
