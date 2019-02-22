@@ -14,14 +14,16 @@
     "request": "^2.88.0",
     "sequelize": "^4.41.2"
   },
-  "devDependencies": { "chai": "^4.1.2",
+  "devDependencies": {
+    "chai": "^4.1.2",
     "chai-http": "^4.0.0",
     "cross-env": "^5.2.0",
     "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.2",
     "mocha": "^5.2.0",
-    "prettier": "^1.13.7"},
+    "prettier": "^1.13.7"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -38,12 +40,3 @@
   },
   "homepage": "https://github.com/Divyagk/Project2-Muse-App#readme"
 }
-
-
-
-
-
-
-
-
-
