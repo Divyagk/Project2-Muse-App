@@ -1,11 +1,14 @@
-var db = require("../models");
+// Import NPM dependency
 var request = require('request');
 var express = require('express');
-// var router = express.Router();
 
-// var view = require("../public/js/view.js");
+// Import data model.
+var db = require("../models");
+
 module.exports = function (app) {
 
+  // GET app which calls uses Sequelize's findAll method.
+// This app then hands the data it receives to handlebars so index can be rendered.
   app.get("/Movies", function (req, res) {
 
 
@@ -15,7 +18,8 @@ module.exports = function (app) {
     });
   });
 
-
+// GET app which calls uses Sequelize's findAll method.
+// This app then hands the data it receives to handlebars so cooking can be rendered.
   app.get("/cooking", function (req, res) {
 
     db.Food.findAll({}).then(function (dbFood) {
@@ -24,7 +28,22 @@ module.exports = function (app) {
     });
   });
 
-  // Post new movies
+
+
+// GET app which calls uses Sequelize's findAll method.
+// This app then hands the data it receives to handlebars so book can be rendered.
+  app.get("/Books", function (req, res) {
+
+    db.Books.findAll({}).then(function (dbBooks) {
+      res.render("book", {dbBooks})
+      console.log(dbBooks)
+      
+    });
+  });
+
+
+  
+// app.post which calls Sequelize's create method with the movie name given by the user.
   app.post('/api/new/movie', function (req, res) {
 
     var movieName = req.body.name;
@@ -74,15 +93,7 @@ res.json(body)
     });
   });
 
-  app.get("/Books", function (req, res) {
-
-    db.Books.findAll({}).then(function (dbBooks) {
-      res.render("book", {dbBooks})
-      console.log(dbBooks)
-      
-    });
-  });
-
+  
 
 // // Post new Books
 // app.post("/api/new/book", function (req, res) {
