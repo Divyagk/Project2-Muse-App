@@ -1,0 +1,264 @@
+a.begin-box{
+    padding: 10px 22px;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    background-image: linear-gradient(to bottom, #5cc9b1, #5cabc9);
+    box-shadow: 2px 3px #1a353a;
+    
+  }
+  a.begin-box:hover{
+    background-image: linear-gradient(to top, #5cc9b1, #5cabc9);
+  }
+  
+  .list-group-item {
+    line-height: 2.5;
+  }
+  
+  .hero-full-screen {
+    height: 100vh;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .hero-full-screen .middle-content-section {
+    text-align: center;
+    color: #fefefe;
+  }
+  
+  .hero-full-screen .top-content-section {
+    width: 100%;
+  }
+  
+  .hero-full-screen .bottom-content-section {
+    padding: 1rem;
+  }
+  
+  .hero-full-screen .bottom-content-section svg {
+    height: 3.75rem;
+    width: 3.75rem;
+    fill: #fefefe;
+  }
+  
+  .hero-full-screen .top-bar {
+    background: transparent;
+  }
+  
+  .hero-full-screen .top-bar .menu {
+    background: transparent;
+  }
+  
+  .hero-full-screen .top-bar .menu-text {
+    color: #fefefe;
+  }
+  
+  .hero-full-screen .top-bar .menu li {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .hero-full-screen .top-bar .menu a {
+    color: #fefefe;
+    font-weight: bold;
+  }
+  
+  
+  .hero-full-screen > div{
+  
+    position: absolute;
+  
+  }
+  
+  .full-name{
+  
+    padding: 15px;
+    background-color: rgba(255,255,255,0.5);
+    color: black;
+    border: none;
+  
+  }
+  
+  #title{
+  
+    margin: 90px;
+    color: white;
+    font-size: 55pt;
+    font-family: "Consolas";
+  
+  
+  }
+  
+  .img-div{
+  
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  
+  }
+  
+  #emotion-header{
+  
+    margin: 100px;
+    font-family: "Consolas";
+    color: white;
+  
+  }
+  
+  .floated-label-wrapper{
+  
+    margin: 15px;
+  
+  }
+  
+  .age-input{
+  
+    margin-top: 150px;
+    font-family: "Consolas";
+    color: white;
+    font-size: 15pt;
+  
+  }
+  
+  #age-choice{
+  
+    margin-top: 15px;
+    border-radius: 35px;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+  
+  }
+  
+  .gender-input{
+  
+    margin-bottom: 15px;
+    font-family: "Consolas";
+    color: white;
+    font-size: 15pt;
+  
+  }
+  
+  #gender-choice{
+  
+    border-radius: 35px;
+    padding: 15px;
+    margin-bottom: 50px;
+    background-color: rgba(255, 255, 255, 0.4); 
+  
+  }
+  
+  .begin-box{
+  
+    border-radius: 25px;
+    padding: 15px;
+    margin: 20px;
+    border-style:"solid";
+    font-size: 22pt;
+    font-family: "Consolas";
+    color: white;
+  
+  }
+  
+  button.begin-box:hover{
+  
+    background-image: linear-gradient(to top, #5cc9b1, #5cabc9);
+  
+  }
+  
+  button.begin-box{
+  
+    padding: 10px 22px;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    background-image: linear-gradient(to bottom, #5cc9b1, #5cabc9);
+    box-shadow: 2px 3px #1a353a;
+  
+  }
+  
+  .age .gender{
+  
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    height: 29px;
+    padding: 5px; /* If you add too much padding here, the options won't show in IE */
+    width: 268px;
+  
+  }
+  
+  .button-hover-reveal-wrapper {
+    overflow: hidden;
+    border: 2px solid #1779ba;
+    border-radius: 5000px;
+    text-align: center;
+    width: 100%;
+    background: #fefefe;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  .button-hover-reveal-wrapper:hover {
+    border: none;
+    background-color: #1779ba;
+    transition: background-color 0.5s ease;
+  }
+  
+  .button-hover-reveal-wrapper:hover .button-hover-reveal {
+    display: block;
+    font-size: 16px;
+    padding: 22px;
+  }
+  
+  .button-hover-reveal-wrapper:hover .button-hover-reveal:hover {
+    transition: background-color 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .button-hover-reveal-wrapper:hover label {
+    display: none;
+  }
+  
+  .button-hover-reveal-wrapper .button-hover-reveal {
+    display: none;
+    color: #fefefe;
+    width: 50%;
+    z-index: 1;
+  }
+  
+  .button-hover-reveal-wrapper label {
+    padding: 16px;
+    color: #1779ba;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  
