@@ -34,11 +34,10 @@
 
 
 <h3>API's Used:</h3>
+
 -Omdb API
 
-
 -food2fork API for getting food recipies.
-
 
 -Google book API
 
