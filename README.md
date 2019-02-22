@@ -48,7 +48,7 @@
 _Contributing Team Members:_
 
 **Divya Gopalakrishnan**
-Backend and API's
+:- Backend and API's
 
 **Jensen Santos,Timothy Lee,Brett Veldman**
-Frontend
+:- Frontend
