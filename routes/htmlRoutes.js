@@ -29,9 +29,9 @@ module.exports = function(app) {
   app.get("/emotion", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/emotion.html"));
   });
-  app.get("/entertaiment",function(req, res){
-    res.sendFile(path.join(__dirname, "../public/entertaiment.html"));
-  });
+  // app.get("/entertaiment",function(req, res){
+  //   res.sendFile(path.join(__dirname, "../public/entertaiment.html"));
+  // });
 
   app.get("/Games",function(req, res){
     res.sendFile(path.join(__dirname, "../public/Games.html"));
