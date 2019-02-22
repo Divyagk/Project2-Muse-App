@@ -1,9 +1,11 @@
+
+{{!-- Header --}}
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">Muse App</a>
     </div>
-
+{{!-- adding new movies --}}
     <form class="navbar-form navbar-left" action='/api/new/movie' method=POST>
       <div class="form-group">
         <input name="name" class="form-control" placeholder="Add Movie Name">
@@ -16,7 +18,7 @@
 
 
 
-
+{{!-- shows the details of the movies --}}
 <div class="row" id="movies-container">
   {{#each dbData}}
 
