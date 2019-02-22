@@ -42,3 +42,13 @@
 -Google book API
 
 <h3>Challenges:</h3>
+
+-
+
+_Contributing Team Members:_
+
+**Divya Gopalakrishnan**
+Backend and API's
+
+**Jensen Santos,Timothy Lee,Brett Veldman**
+Frontend
