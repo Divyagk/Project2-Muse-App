@@ -26,19 +26,21 @@
       <div class="card">
         <img class="img-responsive" id="new-movies" src={{this.movie_poster}}>
         {{!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Click Here</button> --}}
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
-          click here
-        </button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable{{this.id}}"> 
+        click here
+        </button> 
+
+          
 
 
-        <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog"
+        <div class="modal fade" id="exampleModalScrollable{{this.id}}" tabindex="-1" role="dialog"
           aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
           <div class="modal-dialog modal-dialog-scrollable" role="document">
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalScrollableTitle">{{this.movie_name}}</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true" aria-label="Close">
+                  {{!-- <span aria-hidden="true">&times;</span> --}}
                 </button>
 
               </div>
@@ -53,7 +55,7 @@
                 <p><strong>Rotten Tomatoes: </strong>{{this.movie_ratingRotten}}</p>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" aria-hidden="true">Close</button>
                 {{!-- <button type="button" class="btn btn-primary">Save changes</button> --}}
               </div>
             </div>
@@ -76,8 +78,6 @@
 </div>
 
 
-{{!-- <script>
-  $('modal-body').on('hidden.bs.modal fade', '.modal fade', function () {
-  $(this).removeData('bs.modal fade');
-});
-</script> --}}
+
+
+
