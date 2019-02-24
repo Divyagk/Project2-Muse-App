@@ -93,53 +93,12 @@ res.json(body)
     });
   });
 
-  
 
-// // Post new Books
-// app.post("/api/new/book", function (req, res) {
-
-//   var bookName = req.body.name;
-//   console.log(bookName)
-//   var queryUrl = "https://www.googleapis.com/books/v1/volumes?q="+bookName
-
-//   request(queryUrl, function (error, response, body) {
-
-
-//     if (!error && JSON.parse(body).Response !== 'False') {
-
-
-
-//       db.Books.create({
-//         book_title: JSON.parse(body).items.title,
-//         // book_subtitle: JSON.parse(body).subtitle,
-//         book_authors: JSON.parse(body).authors,
-//         book_description: JSON.parse(body).description,
-//         book_imageLinks: JSON.parse(body).imageLinks,
-//         book_buyLink: JSON.parse(body).buyLink
-        
-//       }).then(function () {
-//         res.redirect("/Books");
-//       });
-
-//     }
-//   });
-
-
-// });
 
 
 
 
 };
-// uri1:"https://www.food2fork.com/api/search?key=ce2b18095ef5490c514c8c222dfa3c16&q=chicken%20breast&page=2"
-
-
-
-
-
-
-
-
 
 
 
