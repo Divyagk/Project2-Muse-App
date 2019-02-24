@@ -5,8 +5,7 @@
 
 ###Project Description### <br><br>
 
-
-
+Muse App, that is a multipurpose app or mood enhancing app for an entertaiment purpose .This App provde many suggestions to the user such as movies,games,books,cooking recipes.And also users can post new movies.
 
 [App]
 
@@ -15,7 +14,7 @@
 
 -Bootstrap,HTML
 
--Cards, Modal
+-Cards, Modal,Susy
 
 -Express.js
 
