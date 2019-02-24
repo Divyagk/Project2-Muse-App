@@ -42,7 +42,11 @@ Muse App, that is a multipurpose app or mood enhancing app for an entertaiment p
 
 <h3>Challenges:</h3>
 
--
+-Integrating the frontend and backend code.
+
+-Understanding the Mvc structure.
+
+-Here some external Api's are used to get the movies,food recipes,books datas and need to bulid dynamic web pages with them,that was a great challenge.
 
 _Contributing Team Members:_
 
