@@ -7,7 +7,7 @@
 
 Muse App, that is a multipurpose app or mood enhancing app for an entertaiment purpose .This App provde many suggestions to the user such as movies,games,books,cooking recipes.And also users can post new movies.
 
-[App]
+[App] https://protected-savannah-40789.herokuapp.com/
 
 
 <h3>Technologies Used:</h3>
